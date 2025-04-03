@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>OK</title>
+    <title>CST</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -11,6 +11,9 @@
 <body>
   <div id="content">
     Salut
+    <script>
+      alert(url);
+    </script>
   </div>
   <script>
       if (url == 'cst.dev.br') {
@@ -18,8 +21,6 @@
       } else {
         $("#content").load("content2.html");
       }
-
-      alert(url);
     </script>
 </body>
 </html>
