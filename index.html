@@ -1,4 +1,18 @@
 <html>
-  <head><title>OK</title></head>
-<body>Salut</body>
+  <head>
+    <title>OK</title>
+    <javascript>
+      var url = window.location.href;
+      if (url == 'cst.dev.br') {
+        $("#content").load("content.html");
+      } else {
+        $("#content").load("content2.html");
+      }
+    </javascript>
+  </head>
+<body>
+  <div id="content">
+    Salut
+  </div>
+</body>
 </html>
