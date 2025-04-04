@@ -6,10 +6,11 @@ const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
 
 function WebsiteLoad() {
   if (WebsiteProtocol != 'https://'){
-    document.getElementById('website-full').innerHTML += '<br>Some new content!';
+    document.getElementById('website-full').innerHTML = '<br>'+WebsiteProtocol;
     //window.location.href = 'https://'+WebsiteURL+WebsitePath;
-    break;
   } else {
+    
+    document.getElementById('website-full').innerHTML = '<br> ...'+WebsiteProtocol;
     WebsiteCheckURL();
   }
 }
