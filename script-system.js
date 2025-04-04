@@ -8,8 +8,12 @@ function WebsiteLoad() {
   if (WebsiteProtocol != 'https://'){
     window.location.href = 'https://'+WebsiteURL+WebsitePath;
     break;
+  } else {
+    WebsiteCheckURL();
   }
-  
+}
+
+funtion WebsiteCheckURL() {
   if (WebsiteURL == JSONTestURL){
     alert('website true');
   } else {
