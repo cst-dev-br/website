@@ -4,24 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/code/script-system.js"></script>
-    <script>
-      var url = window.location.hostname;
-    </script>
+    <script type="text/javascript" src="/script-system.js"></script>
   </head>
 <body>
   <div id="content">
     Salut
-    <script>
-      alert(url);
-    </script>
   </div>
-  <script>
-      if (url == 'cst.dev.br') {
-        $("#content").load("content.html");
-      } else {
-        $("#content").load("content2.html");
-      }
-    </script>
 </body>
 </html>
