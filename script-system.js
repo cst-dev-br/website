@@ -15,7 +15,7 @@ function WebsiteLoad() {
   }
 }
 
-funtion WebsiteCheckURL() {
+function WebsiteCheckURL() {
   if (WebsiteURL == JSONTestURL){
     alert('website true');
   } else {
