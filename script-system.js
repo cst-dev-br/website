@@ -6,7 +6,8 @@ const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
 
 function WebsiteLoad() {
   if (WebsiteProtocol != 'https://'){
-    window.location.href = 'https://'+WebsiteURL+WebsitePath;
+    document.getElementById('website-full').innerHTML += '<br>Some new content!';
+    //window.location.href = 'https://'+WebsiteURL+WebsitePath;
     break;
   } else {
     WebsiteCheckURL();
